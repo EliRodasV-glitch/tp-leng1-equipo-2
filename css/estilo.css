@@ -414,3 +414,102 @@ body.dark-mode nav a:hover{
     color:#4FC3F7;
 
 }
+
+/*CONTACTO INTENTO DE ARREGLO*/
+
+body.contacto{
+    font-family: var(--fuente);
+    font-size: 16px;
+    color: var(--color-texto);
+
+    background-image: url("../imagenes/nosotros.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Capa blanca transparente para que el texto se lea */
+body.nosotros::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background: rgba(255,255,255,0.45);
+
+    z-index: -1;
+}
+
+/* Hace que las secciones parezcan tarjetas */
+body.nosotros section{
+    background: rgba(255,255,255,0.75);
+    border-radius: 20px;
+
+    padding: 3rem;
+    margin: 3rem auto;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.12);
+}
+
+/* Imagenes dentro de Nosotros */
+body.nosotros img{
+    width: 100%;
+    max-width: 650px;
+
+    display: block;
+    margin: 0 auto;
+
+    border-radius: 15px;
+}
+
+/* Párrafos */
+body.nosotros p{
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Listas */
+body.nosotros ul,
+body.nosotros dl{
+    text-align: left;
+    width: fit-content;
+    margin: auto;
+    line-height: 1.8;
+}
+/*========================*/
+/* BOTON MODO OSCURO */
+/*========================*/
+
+#modo{
+
+    margin-top:15px;
+    padding:10px 18px;
+
+    border:none;
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background:var(--color-acento);
+    color:white;
+
+    font-size:16px;
+    font-family:var(--fuente);
+
+    transition:.3s;
+
+}
+
+#modo:hover{
+
+    transform:scale(1.05);
+
+
+
+
+
+
+
+
+
+
