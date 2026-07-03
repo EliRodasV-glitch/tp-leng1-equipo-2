@@ -15,3 +15,22 @@ boton.addEventListener("click", function(){
     }
 
 });
+
+//////// BUSCADOR EN PARTES PROGRAMA /////////
+
+const buscador = document.getElementById("buscador");
+const tarjetasProgramas = document.querySelectorAll(".item-programa");
+
+if (buscador) { // esto es de estructurADAAAAAAAA
+    buscador.addEventListener("keyup", function() {
+        const textoBusqueda = this.value.toLowerCase();
+        tarjetasProgramas.forEach(tarjeta => { //jaja la flecha asigna valores como estructurada 
+            const contenidoTarjeta = tarjeta.textContent.toLowerCase();
+            if (contenidoTarjeta.includes(textoBusqueda)) {
+                tarjeta.style.display = ""; // essto lo muestra
+            } else {
+                tarjeta.style.display = "none"; // esto lo oculta fua sherlock
+            }
+        });
+    });
+}
