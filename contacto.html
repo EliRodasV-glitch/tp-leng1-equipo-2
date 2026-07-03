@@ -25,38 +25,105 @@
     <button id="modo">🌙 Modo oscuro</button>
             
         </header>
-        <main>
-            <h2>¡Contactanos!</h2>
-            <p>Si estás interesad@ en colaborar con nosotros o por cualquier otra consulta que tengas, mandanos un email con el formulario de abajo:</p>
-            <form action="/enviar" method="post">
-                <label for="nombre">Nombre</label><br>
-                <input type="text" id="nombre" name="nombre" required><br>
-                <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" required><br>
-                <label for="programa">Programa</label><br>
-                <select id="programa" name="programa"><br>
-                    <option value="">Elegí programa</option>
-                    <option value="ar">Adopción Responsable</option>
-                    <option value="rht">Red de Hogares de Tránsito</option>
-                    <option value="cc">Campaña de castración</option>
-                    <option value="ajl">Acciones Judiciales y Legislativas</option>
-                </select><br>
-                <label for="mensaje">Mensaje</label><br>
-                <textarea id="mensaje" name="mensaje" rows="6" required></textarea><br>
-                <button type="submit" formaction="mailto:info@salvandopatitas.com">Enviar</button><br>
-            </form>
-        </main>
-        <aside>
-            <p>También podés comunicarte con nosotros mediante los siguientes medios:</p>
-            <dl>
-                <dt>Teléfono</dt>
-                    <dd><a href="tel:1156341278" target="_blank">11 5634-1278</a></dd>
-                <dt>En persona</dt>
-                    <dd><a href="https://www.google.com/maps/@-34.574862,-58.4353297,3a,75y,236.19h,90t/data=!3m7!1e1!3m5!1sPoUJ0Wv6TYVyXltWjd4CHA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DPoUJ0Wv6TYVyXltWjd4CHA%26yaw%3D236.19!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Av. Santa Fe 6000, Buenos Aires, Argentina</a></dd>
-                <dt>Instagram</dt>
-                    <dd><a href="https://www.instagram.com/SalvandoPatitasLHM" target="_blank">@SalvandoPatitasLHM</a></dd>
-            </dl>
-        </aside>
+       <main class="contacto-contenedor">
+
+    <section class="formulario-contacto">
+
+        <h2>📬 ¡Contactanos!</h2>
+
+        <p>
+            ¿Querés colaborar con nosotros o realizar alguna consulta?
+            Completá el formulario y nos comunicaremos con vos lo antes posible.
+        </p>
+
+        <form action="/enviar" method="post">
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="programa">Programa</label>
+
+            <select id="programa" name="programa">
+
+                <option value="">Elegí un programa</option>
+                <option value="ar">Adopción Responsable</option>
+                <option value="rht">Red de Hogares de Tránsito</option>
+                <option value="cc">Campaña de Castración</option>
+                <option value="ajl">Acciones Judiciales y Legislativas</option>
+
+            </select>
+
+            <label for="mensaje">Mensaje</label>
+
+            <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="7"
+                required></textarea>
+
+            <button type="submit">
+                Enviar mensaje
+            </button>
+
+        </form>
+
+    </section>
+
+    <aside class="informacion-contacto">
+
+        <h2>Información</h2>
+
+        <p>
+            Si preferís comunicarte por otros medios,
+            podés hacerlo mediante:
+        </p>
+
+        <div class="tarjeta-contacto">
+
+            <h3>📞 Teléfono</h3>
+
+            <a href="tel:1156341278">
+                11 5634-1278
+            </a>
+
+        </div>
+
+        <div class="tarjeta-contacto">
+
+            <h3>📍 Dirección</h3>
+
+            <a href="https://www.google.com/maps/" target="_blank">
+                Av. Santa Fe 6000
+            </a>
+
+        </div>
+
+        <div class="tarjeta-contacto">
+
+            <h3>📷 Instagram</h3>
+
+            <a href="https://www.instagram.com/SalvandoPatitasLHM" target="_blank">
+                @SalvandoPatitasLHM
+            </a>
+
+        </div>
+
+        <div class="tarjeta-contacto">
+
+            <h3>✉️ Email</h3>
+
+            <a href="mailto:info@salvandopatitas.org.ar">
+                info@salvandopatitas.org.ar
+            </a>
+
+        </div>
+
+    </aside>
+
+</main>
         <footer>
             <a href="mailto:info@salvandopatitas.org.ar" target="_blank">info@salvandopatitas.org.ar</a><br>
             <a href="https://www.instagram.com/SalvandoPatitasLHM" target="_blank">@SalvandoPatitasLHM</a><br>
