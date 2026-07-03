@@ -444,7 +444,156 @@ body.dark-mode nav a:hover{
 
     transform:scale(1.05);
 
+/*========================*/
+/* CONTACTO */
+/*========================*/
 
+.contacto-contenedor{
+
+    max-width:1200px;
+
+    margin:50px auto;
+
+    display:flex;
+
+    gap:40px;
+
+    align-items:flex-start;
+
+}
+
+.formulario-contacto{
+
+    flex:2;
+
+    background:rgba(255,255,255,.92);
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+
+}
+
+.informacion-contacto{
+
+    flex:1;
+
+    background:rgba(255,255,255,.92);
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+
+}
+
+.formulario-contacto form{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.formulario-contacto label{
+
+    font-weight:bold;
+
+    margin-top:15px;
+
+    margin-bottom:6px;
+
+}
+
+.formulario-contacto input,
+.formulario-contacto select,
+.formulario-contacto textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    border:1px solid #d5d5d5;
+
+    font-family:var(--fuente);
+
+    font-size:16px;
+
+}
+
+.formulario-contacto textarea{
+
+    resize:vertical;
+
+}
+
+.formulario-contacto button{
+
+    margin-top:25px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:var(--color-acento);
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.formulario-contacto button:hover{
+
+    transform:scale(1.03);
+
+}
+
+.tarjeta-contacto{
+
+    background:var(--color-fondo);
+
+    padding:18px;
+
+    border-radius:12px;
+
+    margin-top:20px;
+
+}
+
+.tarjeta-contacto a{
+
+    text-decoration:none;
+
+    color:var(--color-acento);
+
+    font-weight:bold;
+
+}
+
+body.dark-mode .formulario-contacto,
+body.dark-mode .informacion-contacto{
+
+    background:#1e1e1e;
+
+}
+
+body.dark-mode .tarjeta-contacto{
+
+    background:#2d2d2d;
+
+}
 
 
 
