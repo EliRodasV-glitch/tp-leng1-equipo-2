@@ -448,22 +448,6 @@ body.dark-mode nav a:hover{
 /* CONTACTO */
 /*========================*/
 
-/*=========================================
-            FONDO DE LA PÁGINA
-=========================================*/
-
-body.contacto{
-
-    background:
-    linear-gradient(rgba(255,255,255,.88), rgba(255,255,255,.88)),
-    url("../imagenes/fondo-contacto.jpg");
-
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
-
-}
-
 
 /*=========================================
             FONDO DE LA PÁGINA
@@ -851,7 +835,8 @@ body.dark-mode .informacion-contacto p{
 
     
 
-
+/* EN ESTA PARTE VOY A ACLARAR , FALTABA BOOSTRAP , FALTABA EL HEADER  , SAQUE LA FOTO PORQUE ESTABA MAL Y NO SE VISUALIZABA  , ESTABAN MAL LA POSICION DE LAS COSAS , CODIGOS EN ESPAÑOL,
+  NO TENIA UN CSS , TUVE QUE SEPARAR LAS COSAS EN FILAS MEDIANTE ESTE CSS , ORDENAR Y HACER PRUEBA Y ERROR.*/
 
 
 
