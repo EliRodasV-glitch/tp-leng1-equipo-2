@@ -422,7 +422,7 @@ body.contacto{
     font-size: 16px;
     color: var(--color-texto);
 
-    background-image: url("../imagenes/nosotros.jpg");
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
