@@ -12,54 +12,28 @@
     padding: 0;
 }
 
-/* /////// HEADER ////////// */
+/* /////// HEADER BOOTSTRAP ////////// */
 
-header {
-    background-color: var(--color-primario);
-    padding: 1rem 2rem;
-    display: flex;
-    align-items: center; /* esto centra el logo y el menú verticalmente */
-    flex-direction: column;
-    justify-content: center;
+/* ayuda estoy peleando con esto hace una hora*/
+.navbar-nav .nav-link {
+    color: var(--color-acento);
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0 0.5rem;
+    transition: all 0.1s ease;
 }
 
-.header-inferior {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-h1 {
-    text-align: center;
+.navbar-nav .nav-link:hover {
     color: var(--color-texto);
-    line-height: 1.6;
-    font-size: 1.5rem;
+    border-bottom: 2px solid var(--color-texto);
 }
 
-.logo-principal {
-    position: absolute; /* Sesto sirve para que no empuje el menu*/
-    left: 0;            /* Lo pega completamente al lado izquierdo */
-    width: 80px;
-    margin: 0;
+.navbar-brand:hover {
+    border-bottom: none;
 }
 
-/* /////// HEADER NAVEGACION ////////// */
-
-.menu-enlaces {
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
-}
-
-.menu-enlaces a {
-    text-decoration: none;
-    color: var(--color-acento); /*quita el azul horrible de link y lo pone un azul mas lindo,usar siempre!! */
-    font-weight: 600;
-    font-size: 1.1rem;          
+header .navbar {
+    background-color: var(--color-primario);
 }
 
 nav a {
@@ -81,6 +55,7 @@ nav a:hover {
     text-align: center;      
     margin-bottom: 1rem;  
 }
+
 
 /* /////// CONFIG GENERAL ////////// */
 
@@ -113,48 +88,54 @@ h3 {
     color: #151b54;
 }
 
-/* /////// SECCIONES Y ARTICLE ////////// */
+/* /////// SECCIONES Y ARTICLE BOOSTRAP ////////// */
 
-section {
-    display: flex;
-    flex-direction: column; /*esto pone columnas*/
-    text-align: center;
-    gap: 4rem;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 2rem 0;
+.tarjeta-programa {
+    background-color: var(--color-fondo);
+    border: none; /* Elimina el borde gris horrible que trae bootstrap */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); 
+    text-align: center; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-article {
-    display: flex;
-    align-items: center; /*esto centra la imagen y el texto*/
-    gap: 3rem;
-    background:var(--color-fondo); 
-    padding: 2.5rem;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); 
+.tarjeta-programa:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.15); 
 }
 
-article img {
-    width: 45%;             
-    border-radius: 12px;
-    object-fit: cover;      
+.tarjeta-programa .card-img-top {
+    height: 250px;
+    object-fit: cover;
 }
 
-.info-programa {
-    width: 55%;             
-}
-
-.info-programa h3, .info-programa h4 {
+.tarjeta-programa .card-title {
     color: var(--color-acento);
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
 }
 
-.info-programa p, .info-programa ul, .info-programa dl {
-    margin-bottom: 1rem;
-    line-height: 1.6;
-    color: #444; 
+.alerta-unirse {
+    background-color: var(--color-fondo);
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    text-align: center; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.alerta-unirse a {
+    color: var(--color-acento);
+    text-decoration: none;
+}
+
+.alerta-unirse:hover {
+    color: var(--color-texto);
+    transform: translateY(-0.5rem);
+}
+
+.alerta-unirse hr {
+    border-color: var(--color-acento);
+}
+
+.alerta-unirse p {
+    color: var(--color-texto);
 }
 
 /* /////// CAJA INDEX ////////// */
@@ -176,24 +157,44 @@ article img {
     color: var(--color-acento);
 }
 
-/* /////// PROG INDEX BOTONES ////////// */
+/* /////// PROGRAMAS INDEX BOTONES ////////// */
+/*hay banda del important porque se me rompia la pag*/
 
-.boton-enlace {
-    display: inline-block; 
-    background-color: var(--color-acento); 
-    color: var(--color-fondo); 
-    padding: 0.8rem 1.5rem; 
-    border-radius: 8px; 
-    text-decoration: none; /*esto quita el subrayado de links, usar siempre!!*/
-    font-weight: bold;
-    margin-top: 1rem; 
-
+.btn-primary {
+    background-color: var(--color-acento) !important;
+    border-color: var(--color-acento) !important;
+    color: var(--color-fondo) !important;
+    transition: background-color 0.3s ease;
 }
 
-.boton-enlace:hover { /* el hover al pasar el mouse hace algo*/
-    background-color: var(--color-primario);
-    color: var(--color-acento); 
-    transition: background-color 0.3s ease;
+.btn-primary:hover {
+    background-color: var(--color-primario) !important;
+    border-color: var(--color-primario) !important;
+    color: var(--color-acento) !important;
+}
+
+/* /////// PROGRAMAS ////////// */
+
+.info-programa {
+    width: 55%;             
+}
+
+.info-programa h3, .info-programa h4 {
+    color: var(--color-acento);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.info-programa p, .info-programa ul, .info-programa dl {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #444; 
+}
+
+.programas-unirse a{
+    color: var(--color-acento);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 /* /////// FOOTER ////////// */
@@ -215,6 +216,8 @@ footer a {
     transition: all 0.3s ease;
     padding: 0.5rem;
 }
+
+
 /* ////////////////////////////////////////// */
 /* PAGINA NOSOTROS */
 /* ////////////////////////////////////////// */
